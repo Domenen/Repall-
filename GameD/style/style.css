@@ -1,0 +1,103 @@
+
+body {
+    background-color: #d6b676;
+}
+
+h1{
+    text-align: center;
+}
+
+a {
+    color: #000;
+    text-decoration: none
+}
+
+a:hover {
+    color: blue;
+}
+
+.head > a > h1 {
+    border-style: double;
+    border-width: 5px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.body {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+}
+
+.left_body {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    text-align: center;
+    background-color: #099642;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: cursive;
+    border-style: double;
+    border-width: 5px;
+    background-image: url(/D:/прогиромир/GameD/pic/1.jpg);
+    object-fit: cover;
+    height: 645px;
+}
+
+
+.left_body > h2 {
+    margin-top: -1%;
+    margin-bottom: -3%;
+}
+
+.left_body > ul >h3 {
+    text-decoration: underline;
+}
+
+.right_body {
+    display: flex;
+    width: 75%;
+    justify-content: end;
+    flex-direction: column;
+    background-image: url(/D:/прогиромир/GameD/pic/gora.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: cursive;
+    border-style: double;
+    border-width: 5px;
+}
+
+.right_body > p {
+    color: #ffffff;
+}
+
+.right_body > img {
+    width: 75%;
+}
+
+.body_down {
+    border-style: double;
+    border-width: 5px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-image: url(/D:/прогиромир/GameD/pic/2.jpg);
+    background-size: auto;
+}
+
+.body_answer {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+}
+
+.body_answer > a > input {
+    height: 40px;
+}

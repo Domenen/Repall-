@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Нумерология</title>
+
+</head>
+<body>
+    <div class="header">
+            <H1>Введите свою дату рождения</H1>
+    </div>
+<div class="body">
+    <div class="content">
+            <h2>Пример</h2>
+            <h2>01  05  1995</h2>
+            <input type="number" id="days" name="Day" placeholder="День">
+            <input type="number" id="months" name="Month" placeholder="Месяц">
+            <input type="number" id="years" name="Year" placeholder="Год">
+            <div class="bott">
+            <Button id="button">Узнать</Button>
+            </div>    
+                <script>        
+                var button = document.getElementById("button");
+                
+                button.onclick = function() { 
+                    var day1 = document.getElementById("days").value;
+                    var month1 = document.getElementById("months").value;
+                    var year1 = document.getElementById("years").value;
+
+                    var dayz = day1.toString().split("").map(Number);
+                    var monthz = month1.toString().split("").map(Number);
+                    var yearz = year1.toString().split("").map(Number);
+                    var num1 = dayz[0];
+                    var num2 = dayz[1];
+                    var num3 = monthz[0];
+                    var num4 = monthz[1];
+                    var num5 = yearz[0];
+                    var num6 = yearz[1];
+                    var num7 = yearz[2];
+                    var num8 = yearz[3];
+                    
+                    var numbase1 = num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8;
+                    
+                    
+                    
+                    
+                    numb1 = numbase1.toString().split("").map(Number);    
+                    if (numbase1 <= 10) {
+                        numbase2 = numbase1;
+                    } else {
+                        numbase2 = numb1[0] + numb1[1];
+                    }
+                    
+                    
+                    // var numi = num1 + num2
+                    
+                    numb2 = numbase2.toString().split("").map(Number);
+                    if (num1 == 0) {
+                        numi = num2; 
+                    } else {
+                        numi = num1;
+                    }
+
+                    var numdop1 = numbase1 - (numi * 2);
+                    numd1 = numdop1.toString().split("").map(Number);
+                    
+                    if (numdop1 <= 12) {
+                        numdop2 = numdop1;
+                    } else {
+                        numdop2 = numd1[0] + numd1[1];
+                    }
+                    
+                    
+                    numd2 = numdop2.toString().split("").map(Number); 
+
+                    var boxbase = document.getElementById("base");
+                    var boxdop = document.getElementById("dop");
+                    boxbase.innerHTML = numbase1 + "." + numbase2;
+                    boxdop.innerHTML = numdop1 + "." + numdop2;
+                    var box1 = document.getElementById("1");
+                    var box2 = document.getElementById("2");
+                    var box3 = document.getElementById("3");
+                    var box4 = document.getElementById("4");
+                    var box5 = document.getElementById("5");
+                    var box6 = document.getElementById("6");
+                    var box7 = document.getElementById("7");
+                    var box8 = document.getElementById("8");
+                    var box9 = document.getElementById("9");
+
+                    var numbers = [];
+                    numbers.push(num1, num2, num3, num4, num5, num6, num7, num8, numb1[0], numb1[1], numb2[0], numb2[1], numd1[0], numd1[1], numd2[0], numd2[1]);
+                    console.log(numbers);
+                    var i = 0;
+                    var boz1 = [];
+                    var boz2 = [];
+                    var boz3 = [];
+                    var boz4 = [];
+                    var boz5 = [];
+                    var boz6 = [];
+                    var boz7 = [];
+                    var boz8 = [];
+                    var boz9 = [];
+
+                    while (i < 17) {
+                        if (numbers[i] == 1) {
+                            boz1.push(numbers[i]);
+                        } 
+                        if (numbers[i] == 2) {
+                            boz2.push(numbers[i]);
+                        } 
+                        if (numbers[i] == 3) {
+                            boz3.push(numbers[i]);
+                        } 
+                        if (numbers[i] == 4) {
+                            boz4.push(numbers[i]);
+                        } 
+                        if (numbers[i] == 5) {
+                            boz5.push(numbers[i]);
+                        } 
+                        if (numbers[i] == 6) {
+                            boz6.push(numbers[i]);
+                        } 
+                        if (numbers[i] == 7) {
+                            boz7.push(numbers[i]);
+                        } 
+                        if (numbers[i] == 8) {
+                            boz8.push(numbers[i]);
+                        } 
+                        if (numbers[i] == 9) {
+                            boz9.push(numbers[i]);
+                        } 
+
+                        i = i + 1;
+                    }
+
+                    box1.innerHTML = boz1;
+                    box2.innerHTML = boz2;
+                    box3.innerHTML = boz3;
+                    box4.innerHTML = boz4;
+                    box5.innerHTML = boz5;
+                    box6.innerHTML = boz6;
+                    box7.innerHTML = boz7;
+                    box8.innerHTML = boz8;
+                    box9.innerHTML = boz9;
+
+                }
+                </script>
+            
+        <div class="content">
+            <div class="topp">
+                <div class="box">
+                    <h2 id="base"></h2>
+                    <p>Базовое число</p>
+                </div>
+                <div class="box">
+                    <h2 id="dop"></h2>
+                    <p>Доп. число</p>
+                </div>
+    
+            </div>
+            <div class="top">
+                <div class="box">
+                    <h2 id="1"></h2>
+                    <p>Характер</p>
+                </div>
+                <div class="box">
+                    <h2 id="4"></h2>
+                    <p>Здоровье</p>
+                </div>
+                <div class="box">
+                    <h2 id="7"></h2>
+                    <p>Удача</p>
+                </div>
+            </div>
+            <div class="mid">
+                <div class="box">
+                    <h2 id="2"></h2>
+                    <p>Энергия</p>
+                </div>
+                <div class="box">
+                    <h2 id="5"></h2>
+                    <p>Логика</p>
+                </div>
+                <div class="box">
+                    <h2 id="8"></h2>
+                    <p>Долг</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="box">
+                    <h2 id="3"></h2>
+                    <p>Интерес</p>
+                </div>
+                <div class="box">
+                    <h2 id="6"></h2>
+                    <p>Труд</p>
+                </div>
+                <div class="box">
+                    <h2 id="9"></h2>
+                    <p>Память</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+
+
+</body>
+</html>

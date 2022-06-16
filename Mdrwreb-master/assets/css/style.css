@@ -1,0 +1,205 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+input[type="text"], input[type="password"], input[type="search"] {
+	color: black;
+	width: 60%;
+	padding: 8px;
+}
+
+input, textarea {
+	outline: none;
+	border: none;
+	border: solid 1px black;
+}
+
+hr {
+	border: solid 1px black;
+	width: 900px;
+	margin-top: 20px;
+}
+
+h1 , h2 {
+	font: normal 170% 'centry gothic', arial;
+	margin: 0 0 15px 0;
+	padding: 15px 0 5px 0;
+	color: #000;
+}
+
+h2 {
+	font-size: 140%;
+}
+
+a, a:hover {
+	outline: none;
+	text-decoration: underline;
+	color: #aeb332;
+}
+
+.posts p {
+	font-size: 115%;
+}
+
+
+
+.header {
+	background-color: black;
+	height: 200px;
+	font-size: 2em;
+	margin-right: 0px;
+	margin-left: 0px;
+	min-width: 800px;
+}
+
+.main, .logo, .menubar, .site_content, .footer {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.logo {
+	width: 309px;
+}
+
+.logo_text h1 a, .logo_text h1, .logo_text h1 a:hover {
+	color: white;
+	letter-spacing: 1em;
+	text-decoration: none;
+	padding: 20px 0 0 0;
+}
+
+.menubar {
+	width: 1200px;
+	height: 50px;
+}
+
+ul.menu {
+	float: right;
+}
+
+ul.menu li 	{
+	float: left;
+	list-style: none;
+	padding-top: 30px;
+}
+
+ul.menu li a {
+	font: normal 100% 'trebuchet ms', sans-serif;
+	display: block;
+	padding: 5px 50px 5px 50px;
+	margin-left: 50px;
+	color: white;
+	text-decoration: none;
+}
+
+ul.menu li.selected a {
+	color: red;
+}
+
+ul.menu li a:hover {
+	color: red;
+}
+
+
+.site_content 	{
+	width: 1500px;
+	overflow: hidden;
+	margin:10px auto 0 auto;
+	background-color: white;
+}
+
+.sidebar_container 	{
+	float: right;
+	width: 250px;
+}
+.sidebar {
+	float: right;
+	width: 250px;
+	margin:5px 50px 10px 50px;
+	padding: 5%;
+	border: solid 2px black;
+	border-radius: 10px;
+	background-color: gray;
+}
+
+.sidebar_left {
+	float: left;
+	width: 170px;
+}
+
+.sidebar_left_l {
+	width: 170px;
+	margin: 5px 50px 10px 50px;
+	padding: 5%;
+	border: solid 2px black;
+	border-radius: 10px;
+	background-color: gray;
+
+}
+
+.btn, .window_search {
+	padding: 8px;
+	background-color: white;
+	cursor:pointer;
+}
+
+.content {
+	float: center;
+	width: 1080px;
+	text-align: center;
+	margin: 0 0 0 250px;
+	padding-top: 20px;
+}
+
+.posts {
+	float: center;
+	width: 900px;
+	text-align: left;
+	height: auto;
+	margin: 0 300px 20px 15px;
+}
+
+.posts h1 {
+	text-align: center;
+	margin: 25px 0 25px 0;
+}
+
+.posts h2 {
+	margin: 5px 0 5px 15px;
+	font-size: 150%;
+}
+
+.posts img	{
+	width: 22%;
+	height: 200px;
+	border: solid 1px black;
+	border-radius: 5px;
+	margin: 5px 5px 5px 5px;
+}
+
+
+
+.footer {
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	background-color: black;
+	color: white;
+	min-width: 1000px;
+	padding-top: 50px;
+}
+
+.footer a {
+	text-decoration: none;
+	color: white;
+	padding: 0 25px 0 0;
+}
+
+.footer a:hover {
+	color: red;
+}
+
+.footer p {
+	padding: 0 0 10px 0;
+}
