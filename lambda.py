@@ -18,10 +18,11 @@
 words = ["Monty", "Python's", "flying", "circus"]
 def short_word(word):
     """Возвращает True, если длина слова меньше или равна 5 и False в противном случае"""
-    return lambda word: len(word) >= 5
+    return len(word) <= 5
 
 # строим контейнер коротких слов исходного списка words
-short_words = lambda len: len >= 5
+short_words = [word for word in words if short_word(word)]
+# short_words = [short_word(word) for word in words]
 # выводим на экран все короткие слова исходного списка words
 for short_word in short_words:
     print(short_word)
