@@ -21,8 +21,10 @@ def short_word(word):
     return len(word) <= 5
 
 # строим контейнер коротких слов исходного списка words
-short_words = [word for word in words if short_word(word)]
-# short_words = [short_word(word) for word in words]
+# первый вариант
+# short_words = [word for word in words if short_word(word)]
+# второй вариант
+short_words = filter(short_word, words)
 # выводим на экран все короткие слова исходного списка words
 for short_word in short_words:
     print(short_word)
