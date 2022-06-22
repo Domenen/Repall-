@@ -18,7 +18,7 @@ class User(Base):
     # Задаем название таблицы
     __tablename__ = 'user'
     # идентификатор пользователя, первичный ключ
-    id = sa.Column(sa.String(36), primory_key=True)
+    id = sa.Column(sa.String(36), primary_key=True)
     # Имя пользователя
     first_name = sa.Column(sa.TEXT)
     # Фамилия пользователя
@@ -33,7 +33,7 @@ class LastSeenLog(Base):
     # задаем название таблицы
     __tabelname__ = 'log'
     # идетификатор пользователя, первичный ключ
-    id = sa.Column(sa.String(36), primory_key=True)
+    id = sa.Column(sa.String(36), primary_key=True)
     # Время последней активности пользователя
     timestamp = sa.Column(sa.DATETIME)
 
