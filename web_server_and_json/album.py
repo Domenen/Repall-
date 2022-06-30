@@ -1,10 +1,14 @@
 import sqlalchemy as sa
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
-import uuid
 
 DB_PATH = "sqlite:///albums.sqlite3"
 Base = declarative_base()
+
+class Error(Exception):
+    pass
+class AlreadyExists(Error):
+    pass
 
 
 class Album(Base):
@@ -39,21 +43,25 @@ def find(artist):
     albums = session.query(Album).filter(Album.artist == artist).all()
     return albums
 
-def request_data():
-    """Запрашивает у пользователя данные и добавляет их в список users
+def request_data(year, artist, genre, album):
+    """Сохраняет нового артиста
     """
-    year = year
-    artist = artist
-    genre = genre
-    album = album
-    id = str(uuid.uuid4())
-    # Создаем нового пользователя
-    user = Album(
-        id=id,
+    assert isinstance(year, int), "Не верно написан год"
+    assert isinstance(artist, str), "Имя артиста должно быть строкой"
+    assert isinstance(genre, str), "Жанр должен состоять только из букв"
+    assert isinstance(album, str), "Название альбома должно быть из букв"
+
+    session = connect_db()
+    saved_album = session.query(Album).filter(Album.album == album, Album.artist == artist).first()
+    if saved_album is not None:
+        raise AlreadyExists("Такой Артисти уже есть - №{}".format(saved_album.id))
+
+    album = Album(
         year=year,
         artist=artist,
         genre=genre,
         album=album
     )
-    # возвращаем созданного пользователя
-    return user
+    session.add(album)
+    session.commit()
+    return album

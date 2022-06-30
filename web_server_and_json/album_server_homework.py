@@ -1,4 +1,3 @@
-import os
 import album
 
 from bottle import route
@@ -6,34 +5,31 @@ from bottle import run
 from bottle import HTTPError
 from bottle import request
 
-# RESOURCES_PATH = "users/"
 
-# def save_user(artist_data):
-#     artist = artist_data["artist"]
-#     last_name = artist_data["last_name"]
-#     filename = "{}-{}.json".format(artist, last_name)
-#     if not os.path.exists(RESOURCES_PATH):
-#         os.makedirs(RESOURCES_PATH)
-
-#     with open(filename, "w") as fd:
-#         json.dump(artist_data, fd)
-#     return filename
 
 
 @route("/albums", method="POST")
-def new_artist():
-    artist_data = {
-        "year": request.forms.get("year"),
-        "artist": request.forms.get("artist"),
-        "genre": request.forms.get("genre"),
-        "album": request.forms.get("album"),
-        "id": request.forms.get("id")
-    }
-    new_artist_data = album.request_data(artist_data)
-    # resource_path = save_user(artist_data)
-    # print("User saved at: ", resource_path)
+def create_album():
+    year = request.forms.get("year")
+    artist = request.forms.get("artist")
+    genre = request.forms.get("genre")
+    album_name = request.forms.get("album")
 
-    return new_artist_data
+    try:
+        year = int(year)
+    except ValueError:
+        return HTTPError(400, "Указан некорректный год альбома")
+
+    try:
+        new_album = album.request_data(year, artist, genre, album_name)
+    except AssertionError as err:
+        result = HTTPError(400, str(err))
+    except album.AlreadyExists as err:
+        result = HTTPError(409, str(err))
+    else:    
+        print("Новый #{} сохранен".format(new_album.id))
+        result = "Альбом #{} успешно сохранен".format(new_album.id)
+    return result
 
 
 @route("/albums/<artist>")
