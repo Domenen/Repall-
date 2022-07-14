@@ -1,0 +1,802 @@
+[
+    {
+      "id": 0,
+      "book_name": "aliqua amet",
+      "author": "Hurley Welch",
+      "genre": "Mystery",
+      "year_of_publication": 1900,
+      "total_revenue": 0
+    },
+    {
+      "id": 1,
+      "book_name": "velit aliquip",
+      "author": "Leon Alvarado",
+      "genre": "History",
+      "year_of_publication": 1900,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 2,
+      "book_name": "officia Lorem",
+      "author": "Bonnie Head",
+      "genre": "Development",
+      "year_of_publication": 2020,
+      "total_revenue": 0
+    },
+    {
+      "id": 3,
+      "book_name": "nisi esse",
+      "author": "Hill Clay",
+      "genre": "Historical fiction",
+      "year_of_publication": 2020,
+      "total_revenue": 0
+    },
+    {
+      "id": 4,
+      "book_name": "adipisicing reprehenderit",
+      "author": "Berg Mcdowell",
+      "genre": "Cooking",
+      "year_of_publication": 1900,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 5,
+      "book_name": "sit excepteur",
+      "author": "Wiggins Flowers",
+      "genre": "Fantasy",
+      "year_of_publication": 2020,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 6,
+      "book_name": "laboris adipisicing",
+      "author": "Hannah Foley",
+      "genre": "Science Fiction",
+      "year_of_publication": 1900,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 7,
+      "book_name": "id sint",
+      "author": "Dominique Byers",
+      "genre": "Horror",
+      "year_of_publication": 1900,
+      "total_revenue": 0
+    },
+    {
+      "id": 8,
+      "book_name": "deserunt amet",
+      "author": "Glenda Boyle",
+      "genre": "Adventure",
+      "year_of_publication": 1900,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 9,
+      "book_name": "id cupidatat",
+      "author": "Mercedes Norris",
+      "genre": "Mystery",
+      "year_of_publication": 2020,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 10,
+      "book_name": "reprehenderit minim",
+      "author": "Brenda Stone",
+      "genre": "Historical fiction",
+      "year_of_publication": 2020,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 11,
+      "book_name": "ut nostrud",
+      "author": "Banks Conley",
+      "genre": "Horror",
+      "year_of_publication": 1900,
+      "total_revenue": 0
+    },
+    {
+      "id": 12,
+      "book_name": "enim nisi",
+      "author": "Iris Brady",
+      "genre": "Science Fiction",
+      "year_of_publication": 2020,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 13,
+      "book_name": "eiusmod dolor",
+      "author": "Faith Leblanc",
+      "genre": "Horror",
+      "year_of_publication": 1900,
+      "total_revenue": 0
+    },
+    {
+      "id": 14,
+      "book_name": "ipsum sit",
+      "author": "Mandy Deleon",
+      "genre": "Adventure",
+      "year_of_publication": 2020,
+      "total_revenue": 0
+    },
+    {
+      "id": 15,
+      "book_name": "laboris dolore",
+      "author": "Paula Delacruz",
+      "genre": "Historical fiction",
+      "year_of_publication": 1900,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 16,
+      "book_name": "est nulla",
+      "author": "Erna Chavez",
+      "genre": "Historical fiction",
+      "year_of_publication": 2020,
+      "total_revenue": 0
+    },
+    {
+      "id": 17,
+      "book_name": "ex voluptate",
+      "author": "Ana William",
+      "genre": "Fantasy",
+      "year_of_publication": 2020,
+      "total_revenue": 0
+    },
+    {
+      "id": 18,
+      "book_name": "dolore quis",
+      "author": "Green Ortiz",
+      "genre": "Fantasy",
+      "year_of_publication": 2020,
+      "total_revenue": 0
+    },
+    {
+      "id": 19,
+      "book_name": "occaecat est",
+      "author": "Lucia Holmes",
+      "genre": "Mystery",
+      "year_of_publication": 1900,
+      "total_revenue": 0
+    },
+    {
+      "id": 20,
+      "book_name": "aute ex",
+      "author": "Alford Mcgee",
+      "genre": "Science Fiction",
+      "year_of_publication": 2020,
+      "total_revenue": 0
+    },
+    {
+      "id": 21,
+      "book_name": "ex reprehenderit",
+      "author": "Claudia Ferguson",
+      "genre": "Adventure",
+      "year_of_publication": 2020,
+      "total_revenue": 0
+    },
+    {
+      "id": 22,
+      "book_name": "aute reprehenderit",
+      "author": "Nadine Caldwell",
+      "genre": "Adventure",
+      "year_of_publication": 1900,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 23,
+      "book_name": "ad sunt",
+      "author": "Abbott Sosa",
+      "genre": "History",
+      "year_of_publication": 1900,
+      "total_revenue": 0
+    },
+    {
+      "id": 24,
+      "book_name": "mollit in",
+      "author": "Katharine Mcbride",
+      "genre": "Fantasy",
+      "year_of_publication": 2020,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 25,
+      "book_name": "esse nostrud",
+      "author": "Grimes Guy",
+      "genre": "Adventure",
+      "year_of_publication": 1900,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 26,
+      "book_name": "in amet",
+      "author": "Christie Bass",
+      "genre": "History",
+      "year_of_publication": 2020,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 27,
+      "book_name": "do adipisicing",
+      "author": "Michael Rose",
+      "genre": "Thriller",
+      "year_of_publication": 2020,
+      "total_revenue": 0
+    },
+    {
+      "id": 28,
+      "book_name": "minim nisi",
+      "author": "Margarita Richards",
+      "genre": "Fantasy",
+      "year_of_publication": 1900,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 29,
+      "book_name": "voluptate labore",
+      "author": "Leticia Cantu",
+      "genre": "Science Fiction",
+      "year_of_publication": 1900,
+      "total_revenue": 0
+    },
+    {
+      "id": 30,
+      "book_name": "exercitation nostrud",
+      "author": "Michelle Rivers",
+      "genre": "Development",
+      "year_of_publication": 2020,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 31,
+      "book_name": "exercitation pariatur",
+      "author": "Melanie Bailey",
+      "genre": "Adventure",
+      "year_of_publication": 2020,
+      "total_revenue": 0
+    },
+    {
+      "id": 32,
+      "book_name": "ea cupidatat",
+      "author": "Dona Trujillo",
+      "genre": "Mystery",
+      "year_of_publication": 2020,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 33,
+      "book_name": "nisi excepteur",
+      "author": "James Bender",
+      "genre": "Horror",
+      "year_of_publication": 1900,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 34,
+      "book_name": "ut nulla",
+      "author": "Dominguez Sweeney",
+      "genre": "Thriller",
+      "year_of_publication": 2020,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 35,
+      "book_name": "aliquip voluptate",
+      "author": "Martin Carver",
+      "genre": "Science Fiction",
+      "year_of_publication": 1900,
+      "total_revenue": 0
+    },
+    {
+      "id": 36,
+      "book_name": "cupidatat sint",
+      "author": "Elena Orr",
+      "genre": "Thriller",
+      "year_of_publication": 2020,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 37,
+      "book_name": "culpa sint",
+      "author": "Howe Madden",
+      "genre": "Historical fiction",
+      "year_of_publication": 2020,
+      "total_revenue": 0
+    },
+    {
+      "id": 38,
+      "book_name": "qui ullamco",
+      "author": "Corrine Hull",
+      "genre": "Fantasy",
+      "year_of_publication": 2020,
+      "total_revenue": 0
+    },
+    {
+      "id": 39,
+      "book_name": "sit qui",
+      "author": "Teresa Dominguez",
+      "genre": "Fantasy",
+      "year_of_publication": 2020,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 40,
+      "book_name": "occaecat id",
+      "author": "Lucille Weeks",
+      "genre": "Science Fiction",
+      "year_of_publication": 2020,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 41,
+      "book_name": "adipisicing et",
+      "author": "Alana Vazquez",
+      "genre": "Science Fiction",
+      "year_of_publication": 1900,
+      "total_revenue": 0
+    },
+    {
+      "id": 42,
+      "book_name": "do ut",
+      "author": "Thompson Sherman",
+      "genre": "Thriller",
+      "year_of_publication": 1900,
+      "total_revenue": 0
+    },
+    {
+      "id": 43,
+      "book_name": "voluptate in",
+      "author": "Thomas Hebert",
+      "genre": "Adventure",
+      "year_of_publication": 2020,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 44,
+      "book_name": "elit esse",
+      "author": "Marsh Rios",
+      "genre": "Fantasy",
+      "year_of_publication": 2020,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 45,
+      "book_name": "velit proident",
+      "author": "Bobbie Marks",
+      "genre": "Development",
+      "year_of_publication": 1900,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 46,
+      "book_name": "Lorem mollit",
+      "author": "Head James",
+      "genre": "Thriller",
+      "year_of_publication": 2020,
+      "total_revenue": 0
+    },
+    {
+      "id": 47,
+      "book_name": "consectetur fugiat",
+      "author": "Jeanine Melendez",
+      "genre": "Cooking",
+      "year_of_publication": 1900,
+      "total_revenue": 0
+    },
+    {
+      "id": 48,
+      "book_name": "pariatur et",
+      "author": "Kirkland Rowe",
+      "genre": "History",
+      "year_of_publication": 1900,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 49,
+      "book_name": "proident elit",
+      "author": "Travis Freeman",
+      "genre": "Fantasy",
+      "year_of_publication": 1900,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 50,
+      "book_name": "aute amet",
+      "author": "Carol Ochoa",
+      "genre": "Fantasy",
+      "year_of_publication": 2020,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 51,
+      "book_name": "nisi dolore",
+      "author": "Duffy Haney",
+      "genre": "Thriller",
+      "year_of_publication": 2020,
+      "total_revenue": 0
+    },
+    {
+      "id": 52,
+      "book_name": "ullamco irure",
+      "author": "Karen Graham",
+      "genre": "Romance",
+      "year_of_publication": 1900,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 53,
+      "book_name": "laborum minim",
+      "author": "Felicia Mcmahon",
+      "genre": "Adventure",
+      "year_of_publication": 1900,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 54,
+      "book_name": "sit voluptate",
+      "author": "Cameron Thomas",
+      "genre": "Mystery",
+      "year_of_publication": 2020,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 55,
+      "book_name": "consequat quis",
+      "author": "Lola Carter",
+      "genre": "Thriller",
+      "year_of_publication": 2020,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 56,
+      "book_name": "nulla et",
+      "author": "Maynard Hines",
+      "genre": "Historical fiction",
+      "year_of_publication": 2020,
+      "total_revenue": 0
+    },
+    {
+      "id": 57,
+      "book_name": "nulla eiusmod",
+      "author": "Alberta Middleton",
+      "genre": "Fantasy",
+      "year_of_publication": 2020,
+      "total_revenue": 0
+    },
+    {
+      "id": 58,
+      "book_name": "Lorem non",
+      "author": "Deanne Booker",
+      "genre": "Thriller",
+      "year_of_publication": 1900,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 59,
+      "book_name": "aliqua ea",
+      "author": "Violet Wilkinson",
+      "genre": "Development",
+      "year_of_publication": 1900,
+      "total_revenue": 0
+    },
+    {
+      "id": 60,
+      "book_name": "fugiat duis",
+      "author": "Ball Curtis",
+      "genre": "Horror",
+      "year_of_publication": 2020,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 61,
+      "book_name": "ea aliquip",
+      "author": "Logan Pugh",
+      "genre": "Science Fiction",
+      "year_of_publication": 1900,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 62,
+      "book_name": "eiusmod laborum",
+      "author": "Nichole Church",
+      "genre": "Horror",
+      "year_of_publication": 1900,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 63,
+      "book_name": "aliquip occaecat",
+      "author": "Christian Maynard",
+      "genre": "Horror",
+      "year_of_publication": 2020,
+      "total_revenue": 0
+    },
+    {
+      "id": 64,
+      "book_name": "culpa non",
+      "author": "Dorsey Meadows",
+      "genre": "Thriller",
+      "year_of_publication": 1900,
+      "total_revenue": 0
+    },
+    {
+      "id": 65,
+      "book_name": "est eiusmod",
+      "author": "Rae Cherry",
+      "genre": "History",
+      "year_of_publication": 1900,
+      "total_revenue": 0
+    },
+    {
+      "id": 66,
+      "book_name": "amet enim",
+      "author": "Amy Willis",
+      "genre": "Fantasy",
+      "year_of_publication": 2020,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 67,
+      "book_name": "laboris ipsum",
+      "author": "Sharpe Hardy",
+      "genre": "Mystery",
+      "year_of_publication": 1900,
+      "total_revenue": 0
+    },
+    {
+      "id": 68,
+      "book_name": "et Lorem",
+      "author": "Watts Townsend",
+      "genre": "Historical fiction",
+      "year_of_publication": 1900,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 69,
+      "book_name": "ullamco aliqua",
+      "author": "Lavonne Hahn",
+      "genre": "History",
+      "year_of_publication": 1900,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 70,
+      "book_name": "aute occaecat",
+      "author": "Townsend Dickson",
+      "genre": "Historical fiction",
+      "year_of_publication": 1900,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 71,
+      "book_name": "nisi laborum",
+      "author": "Whitley Dickerson",
+      "genre": "Cooking",
+      "year_of_publication": 1900,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 72,
+      "book_name": "commodo amet",
+      "author": "Best Valenzuela",
+      "genre": "Adventure",
+      "year_of_publication": 2020,
+      "total_revenue": 0
+    },
+    {
+      "id": 73,
+      "book_name": "do consequat",
+      "author": "Hahn Briggs",
+      "genre": "Adventure",
+      "year_of_publication": 1900,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 74,
+      "book_name": "sint elit",
+      "author": "Graham Moses",
+      "genre": "Romance",
+      "year_of_publication": 2020,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 75,
+      "book_name": "dolor deserunt",
+      "author": "Flynn Ellis",
+      "genre": "Science Fiction",
+      "year_of_publication": 2020,
+      "total_revenue": 0
+    },
+    {
+      "id": 76,
+      "book_name": "non nisi",
+      "author": "Knight Morris",
+      "genre": "History",
+      "year_of_publication": 1900,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 77,
+      "book_name": "non duis",
+      "author": "Gayle Vega",
+      "genre": "Adventure",
+      "year_of_publication": 1900,
+      "total_revenue": 0
+    },
+    {
+      "id": 78,
+      "book_name": "Lorem ex",
+      "author": "Sheila Bruce",
+      "genre": "Romance",
+      "year_of_publication": 2020,
+      "total_revenue": 0
+    },
+    {
+      "id": 79,
+      "book_name": "deserunt veniam",
+      "author": "Margaret Macias",
+      "genre": "Romance",
+      "year_of_publication": 2020,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 80,
+      "book_name": "duis officia",
+      "author": "Parsons Gilliam",
+      "genre": "History",
+      "year_of_publication": 2020,
+      "total_revenue": 0
+    },
+    {
+      "id": 81,
+      "book_name": "eu laboris",
+      "author": "Brennan Rutledge",
+      "genre": "Romance",
+      "year_of_publication": 2020,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 82,
+      "book_name": "adipisicing fugiat",
+      "author": "Brittney Hardin",
+      "genre": "Thriller",
+      "year_of_publication": 2020,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 83,
+      "book_name": "in reprehenderit",
+      "author": "Concetta Kane",
+      "genre": "History",
+      "year_of_publication": 1900,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 84,
+      "book_name": "anim dolore",
+      "author": "Cassandra Lancaster",
+      "genre": "Horror",
+      "year_of_publication": 1900,
+      "total_revenue": 0
+    },
+    {
+      "id": 85,
+      "book_name": "aute labore",
+      "author": "Lorena Ballard",
+      "genre": "Mystery",
+      "year_of_publication": 1900,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 86,
+      "book_name": "esse officia",
+      "author": "Amparo Buckley",
+      "genre": "Mystery",
+      "year_of_publication": 2020,
+      "total_revenue": 0
+    },
+    {
+      "id": 87,
+      "book_name": "officia dolore",
+      "author": "Mccullough Kelley",
+      "genre": "Historical fiction",
+      "year_of_publication": 1900,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 88,
+      "book_name": "cupidatat in",
+      "author": "Marlene Beck",
+      "genre": "Fantasy",
+      "year_of_publication": 1900,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 89,
+      "book_name": "reprehenderit ex",
+      "author": "Holcomb Joseph",
+      "genre": "History",
+      "year_of_publication": 2020,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 90,
+      "book_name": "in consequat",
+      "author": "Janelle Mendoza",
+      "genre": "Horror",
+      "year_of_publication": 1900,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 91,
+      "book_name": "duis adipisicing",
+      "author": "Hopper Robinson",
+      "genre": "Adventure",
+      "year_of_publication": 2020,
+      "total_revenue": 0
+    },
+    {
+      "id": 92,
+      "book_name": "qui quis",
+      "author": "Marci Burke",
+      "genre": "Historical fiction",
+      "year_of_publication": 1900,
+      "total_revenue": 0
+    },
+    {
+      "id": 93,
+      "book_name": "labore consequat",
+      "author": "Pollard Wilkerson",
+      "genre": "History",
+      "year_of_publication": 2020,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 94,
+      "book_name": "dolore nisi",
+      "author": "Oneil Griffin",
+      "genre": "Fantasy",
+      "year_of_publication": 1900,
+      "total_revenue": 0
+    },
+    {
+      "id": 95,
+      "book_name": "cillum non",
+      "author": "Bridget Chapman",
+      "genre": "Romance",
+      "year_of_publication": 2020,
+      "total_revenue": 0
+    },
+    {
+      "id": 96,
+      "book_name": "anim non",
+      "author": "Karin Coleman",
+      "genre": "Horror",
+      "year_of_publication": 2020,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 97,
+      "book_name": "qui tempor",
+      "author": "Hogan Baxter",
+      "genre": "Fantasy",
+      "year_of_publication": 1900,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 98,
+      "book_name": "tempor irure",
+      "author": "Lindsey Oneal",
+      "genre": "Fantasy",
+      "year_of_publication": 2020,
+      "total_revenue": 1000000
+    },
+    {
+      "id": 99,
+      "book_name": "nostrud eu",
+      "author": "Buck Greene",
+      "genre": "Cooking",
+      "year_of_publication": 2020,
+      "total_revenue": 0
+    }
+  ]

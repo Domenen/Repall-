@@ -22,7 +22,7 @@ with open(FILENAME) as f:
 # mass = set(a)
 counter = collections.Counter()
 
-for lines in filee:
+for lines in file:
     line = lines.split('"')
     for word in line:
         filtered_word = word.strip(';').strip(' ').strip(',')
