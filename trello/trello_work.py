@@ -55,14 +55,10 @@ def create_list(column_name):
 
 def delete_list(column_name):
     column_data = requests.get(base_url.format('boards') + '/' + board_id + '/lists', params=auth_params).json()
-    column_set = False
     for column in column_data:
         if column_name == column["name"]:
-            column_set = True
-            column_id = column['id']
+            print(requests.delete(base_url.format('lists') + '/' + column['id'], data={**auth_params}))
 
-    if column_set == True:
-        requests.delete(base_url.format('boards') + '/' + board_id + '/' + column_id, data={'id': column_id, **auth_params})
 
 
 
@@ -90,7 +86,7 @@ def delete(name, column_name):
         for task in column_tasks:    
             if task['name'] == name and column_name == column['name']:
                 task_id = task['id']    
-                requests.delete(base_url.format('cards') + '/' + task_id, data={'value': task_id, **auth_params})            
+                requests.delete(base_url.format('cards') + '/' + task_id, data={**auth_params})            
                 break       
         if task_id:
             break
