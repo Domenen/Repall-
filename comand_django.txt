@@ -1,0 +1,16 @@
+python manage.py shell - откроет консоль проекта, в которой удобно делать миграцию
+
+python manage.py makemigrations - создает файл миграций
+
+python manage.py migrate - приминить миграции
+
+python manage.py runserver - запускает сервер
+
+python manage.py startapp <NAME> - создает приложение, папку с файлами, <NAME> - название приложения
+
+python -m venv <NAME> - создает виртуальное окружение в той директории где находиться, <NAME> название виртуального окуржения
+
+после еще надо активировать  <NAME>\Scripts\activate.bat - из директории где он находиться - deactivate - отключает виртуальное окуржение
+
+django-admin startproject <NAME> - что бы создать проект джанго <NAME> - название проекта
+
