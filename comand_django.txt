@@ -14,3 +14,5 @@ python -m venv <NAME> - создает виртуальное окружение
 
 django-admin startproject <NAME> - что бы создать проект джанго <NAME> - название проекта
 
+
+Book.objects.filter(copy_count=2).exclude(author__country="RU").first().author
