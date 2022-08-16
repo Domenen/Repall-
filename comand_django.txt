@@ -14,6 +14,7 @@ python -m venv <NAME> - создает виртуальное окружение
 
 django-admin startproject <NAME> - что бы создать проект джанго <NAME> - название проекта
 
+python manage.py sqlmigrate <PAPKA> <NUMBER>
 
 ~~~~~~~~~~~~~~~~~~~~~~SHELL~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Book.objects.filter(copy_count=2).exclude(author__country="RU").first().author
@@ -27,3 +28,15 @@ Book.objects.filter(copy_count=2).exclude(author__country="RU").first().author
 		View = Template
 		Controller = View
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	для создания пути media
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
+
+если DEBAG активен :
+if settings.DEBAG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
