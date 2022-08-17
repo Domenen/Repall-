@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NAME</title>
+    <script src="eel.js"></script>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div align="center" class="content">
+        <img src="favicon.png" alt="icon" class="logo">
+        <h2>Telegram Sendler</h2>
+        <input type="text" id="chat_id" placeholder="Chat id"><br>
+        <textarea type="text" id="message" placeholder="Сообщение"></textarea><br>
+        <button id="send_msg">Отправить сообщение</button>
+        <p id="result"></p>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    async function send_msg(){
+        let chat_id = document.getElementById('chat_id').value;
+        let msg = document.getElementById('message').value;
+
+        let result = await eel.send_message(chat_id,mag)();
+        document.getElementById('result').innerHTML = result;
+
+        document.getElementById('message').value = '';
+    }
+
+    $('#send_msg').click(function(){
+        send_msg();
+    });
+
+</script>
+</body>
+</html>
