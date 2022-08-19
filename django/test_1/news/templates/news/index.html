@@ -7,7 +7,12 @@
 <body>
     <h1>{{ title }}</h1>
     {% for item in news  %}
-    
+        <div>
+            <p>{{ item.title }}</p>
+            <p>{{ item.content }}</p>
+            <p>{{ item.created_at|date:"Y-m-d H:i" }}</p>
+        </div>
+        <hr>
     {% endfor  %}
 </body>
 </html>
