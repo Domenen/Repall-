@@ -1,0 +1,21 @@
+----------------------------Асинхронность-----------------
+import acyncio
+
+async def send_hello() -> None:
+	await acyncio.sleep(2) 
+	print("hello")
+
+async def send_bye() -> None:
+	await acyncio.sleep(1) 
+	print("bye")
+
+async def main():
+	t1 = asyncio.create_task(send_hello())
+	t2 = asyncio.create_task(send_bye())	
+	
+	await t1
+	await t2
+
+if __name__ == '__main__':
+	asyncio.run(main())
+-----------------------------------------------------------
