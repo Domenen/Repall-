@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7080158b-3032-4c6a-a47b-20c2ea12f309" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ProjectDjango/news/templates/news/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../comand_django.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../comand_django.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/django.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/django.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectDjango/ProjectDjango/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectDjango/ProjectDjango/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectDjango/ProjectDjango/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectDjango/ProjectDjango/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectDjango/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectDjango/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectDjango/news/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectDjango/news/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="7080158b-3032-4c6a-a47b-20c2ea12f309" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

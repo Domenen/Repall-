@@ -1,0 +1,120 @@
+разные команды, методы, функции!
+
+ReplyKeyboardMarkup - создает клавиатуру
+	{resize_keyboard=boolean - подстраивает кнопки под размер
+	 one_time_keyboard=boolean - сворачивает клаву после нажатия}
+
+
+KeyboardButton - создает конкретную кнопку
+	{text=str}
+
+ReplyKeyboardRemove - убирает клавиатуру
+	{remove_keyboard=True}
+
+InlineKeyboardMarkup - вместе с сообщением отправляем кнопки под ним
+    {row_width=int -ширина строки}
+
+InlineKeyboardButton - создает саму кнопку
+    {text=str - текст самой кнопки
+     url=str - ссылка, что делает кнопка
+     callback_data=str - данные которые мы передаем}
+
+ikb.add(ib1,...,ibn) - добавление кнопок
+
+
+CallbackQuery -
+    {id:str
+    from:user
+    message:Message()
+    data:str}
+
+@dp.message_handler()
+async def startt(message: types.Message):
+    await message.answer(text="отправляем сообщение туда откуда пришло")
+
+@dp.message_handler()
+async def startt(message: types.Message):
+    await bot.send_message(chat_id=message.from_user.id,
+                           text="отправляем сообщение по id пользователя, к примеру пользователь написал сообщение в общий чат, а мы ему ответим в личку")
+
+
+----------------------ОЧЕНЬ ПОЛЕЗНО-------------------------------------------------
+
+        ****     Соединение кнопок в одной функции     ****
+
+from aiogram import Bot, Dispatcher, executor, types
+from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+
+bot = Bot(token=API_TOKEN)
+dp =Dispatcher(bot)
+
+def get_inline_keyboard() -> InlineKeyboardMarkup:
+    ikb = InlineKeyboardMarkup(inline_keyboard=[
+        [InlineKeyboardButton(text="button1", callback_data="BTNcallback")],
+        [InlineKeyboardButton(text="button2", callback_data="BTNcallback")],
+        [InlineKeyboardButton(text="button3", callback_data="BTNcallback")]
+    ])
+
+    return ikb
+
+@dp.message_handler(commands=["start"])
+async def start_command(message: types.Message) -> None:
+    await message.answer(text="texttt",
+                         reply_markup=get_inline_keyboard())
+
+
+
+       ****     Обрабатывает callback'и которые начинаются с "BTNcallback", остальные callback'и обработаны этим handler'ом не будут
+@dp.callback_query_handler(lambda callback_query: callback_query.data.startswith('BTNcallback'))
+async def ikb_callback_handler(callback: types.CallbackQuery) -> None:
+    await callback.message.answer(text="какой нибудь текст")
+
+
+
+
+if __name__ == "__main__":
+    executor.start_polling(dispatcher=dp,
+                           skip_updates=True)
+
+---------------------------------------------------------------------------------
+                Шаблоны колбэков!!!!!!!!!!!!!!!
+from aiogram import CallbackData
+
+cd = CallbackData('ikb', 'action')
+
+ikb = InlineKeyboardMarkup(inline_keyboard=[
+    [InlineKeyboardButton('Button', callback='cd.new('нажали')]
+    ])
+
+@dp.callback_query_handler(cd.filter())
+async def ikb_cb_handler(callback: types.CallbackQuery, callback_data:dict) -> None:
+    if callback_data["action"]  == "нажали":
+        await callback.answer("что нибудь!")
+
+------------------------------------------------------------------------------------------
+                ERRORS HANDLER!!!!!!!!!!!!
+
+import asyncio
+
+@dp.errors_handler(exception=BotBlocked)
+async def error_bot_blocked_handler(update: types.Update, exception: BotBlocked) -> bool:
+    print("нельзя отправить сообщение потому что наз заблокировали")
+
+    return True
+
+-----------------------------------------------------------------------------------
+                INLINE РЕЖИМ!!!!!!!!!!!!!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
